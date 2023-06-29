@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+  .showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+body
+{
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items:center !important;
+    height: 100vh;
+}
+.formgroup-l
+{
+    position:fixed;
+    width: 350px;
+    height: 350px;
+    background: rgba(2, 2, 2, 0.656);
+    box-shadow: -1px 4px 28px 0px rgb(245, 244, 244);
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+}
+.formgroup-s
+{
+    position:fixed;
+    width: 350px;
+    height: 470px;
+    background: rgba(2, 2, 2, 0.656);
+    box-shadow: -1px 4px 28px 0px rgb(245, 244, 244);
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+}
+header
+{
+    position: relative;
+    top: 4%;  
+    left: -1%;
+    padding: 25px 10px;
+    width: 370px;
+    color: rgba(255, 255, 255, 0.975);
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat',sans-serif;
+}
+.create-l
+{
+    position: absolute;
+    top: 35%;   
+    text-align: center;
+    color: rgba(159, 230, 238, 0.867);
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+.create-l input
+{
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+
+.create-s
+{
+    position: absolute;
+    top: 25%;   
+    text-align: center;
+    color: rgba(159, 230, 238, 0.867);
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+.create-s input
+{
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+}
+input[type="submit"]{
+    position: relative;
+    top: 20px;  
+    right:0%;
+    padding: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    align-self: center;
+    background-color: rgb(92, 136, 10);
+    border-style: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  input[type="submit"]:hover{
+    background-color:rgb(25, 175, 180);
+  }
+.bubbles img
+  {
+    width: 50px;
+      animation: bubble 10s linear infinite;
+    }
+    .bubbles
+    {
+    width:100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom:-70px;
+  }
+  @keyframes bubble
+  {
+      0%
+      {
+        transform: translateY(0);
+        opacity:0;
+        }
+        50%
+        {
+          opacity:1;
+        }
+        70%
+      {    
+          opacity:1;
+        }
+        100%
+      {
+        transform: translateY(-80vh);
+        opacity:0;
+      }
+    }
+    .bubbles img:nth-child(1)
+  {
+    animation-delay: 7s;
+    width: 70px;
+  }
+  .bubbles img:nth-child(2)
+  {
+    animation-delay: 1s;
+    width: 60px;
+  }
+  .bubbles img:nth-child(3)
+  {
+    animation-delay: 5s;
+    width: 90px;
+  }
+  .bubbles img:nth-child(4)
+  {
+    animation-delay: 8s;
+      width:75px;
+    }
+    .bubbles img:nth-child(5)
+    {
+      animation-delay: 4s;
+      width: 85px;
+    }
+    .bubbles img:nth-child(6)
+  {
+    animation-delay: 1s;
+    width: 90px;
+  }
+  .bubbles img:nth-child(7)
+  {
+    animation-delay: 5.5s;
+    width: 75px;
+  }
+  .bubbles img:nth-child(8)
+  {
+      animation-delay: 2s;
+      width: 60px;
+    }
+  .bubbles img:nth-child(9)
+  {
+    animation-delay: 6s;
+      width: 80px;
+    }
+    .bubbles img:nth-child(10)
+    {
+      animation-delay: 8s;
+      width: 55px;
+    }

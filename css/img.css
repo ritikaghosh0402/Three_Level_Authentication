@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.9;
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center !important;
+    height: 100vh;
+}
+/*FOR SIGN UP*/
+.formgroup-s{
+    width: 350px;
+    height: 410px;
+    background: rgba(2, 2, 2, 0.656);
+    box-shadow: -1px 4px 28px 0px rgb(245, 244, 244);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+.create-s{
+    position: absolute;
+    bottom: 20%;   
+    text-align: center;
+    color: rgb(243, 246, 239);
+    font-size: 23px;
+    font-weight: 600;  
+}
+.create-s header{
+    padding-bottom:20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 550;
+    font-family: 'Montserrat',sans-serif;
+}
+.create-s label{
+    font-size: 21px;
+    color:rgb(132, 117, 199)
+}
+.create-s input{
+    border: none;
+    width: 75%; 
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(218, 215, 215);
+    align-items: center;
+  }
+/* FOR LOGIN*/
+.formgroup-l{
+    width: 350px;
+    height: 350px;
+    background: rgba(2, 2, 2, 0.656);
+    box-shadow: -1px 4px 28px 0px rgb(245, 244, 244);
+    border-radius: 15px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+.create-l{
+    position: absolute;
+    bottom: 25%;   
+    text-align: center;
+    color: rgb(24, 36, 3);
+    font-size: 23px;
+    font-weight: 600;    
+}
+.create-l header
+{
+    padding-bottom:20%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 550;
+    font-family: 'Montserrat',sans-serif;
+}
+.create-l label{
+    font-size: 21px;
+    color:rgb(132, 117, 199)
+}
+.create-l input{
+    border: none;
+    width: 75%; 
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(218, 215, 215);
+    align-items: center;
+}
+.btn{
+    position: relative;
+    top: 20px;  
+    right: 0%;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(92, 136, 10);
+    border-style: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+}
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-70px;
+}
+@keyframes bubble
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%
+    {
+        opacity:1;
+    }
+    70%
+    {    
+        opacity:1;
+    }
+    100%
+    {
+        transform: translateY(-80vh);
+        opacity:0;
+    }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 3s;
+    width: 30px;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1s;
+    width: 20px;
+}
+.bubbles img:nth-child(3)
+{
+    animation-delay: 4s;
+    width: 40px;
+}
+.bubbles img:nth-child(4)
+{
+    animation-delay: 6s;
+    width:35px;
+}
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+    width: 45px;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubbles img:nth-child(7)
+{
+    animation-delay: 5.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(8)
+{
+    animation-delay: 1.5s;
+    width: 20px;
+}
+.bubbles img:nth-child(9)
+{
+    animation-delay: 3.5s;
+    width: 40px;
+}
+.bubbles img:nth-child(10)
+{
+    animation-delay: 4.5s;
+    width: 25px;
+}

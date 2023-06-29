@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #83c1dd;
+  mix-blend-mode: overlay;
+}
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items:center !important;
+  height: 150vh;
+}
+.form
+{
+  position: absolute;
+  width: 350px;
+  height: 480px;
+  border-radius: 15px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  background: rgba(2, 2, 2, 0.656);
+  box-shadow: -1px 4px 28px 0px rgb(245, 244, 244);
+}
+.content header
+{
+  left: 0%;
+  z-index: 999;
+  padding: 20px 5px;
+  width: 350px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+  color: rgb(255, 255, 255);
+}
+.formGroup
+{
+  padding-bottom: 0%;
+  display: flex;
+  justify-content:center;
+}
+.formGroup span
+{
+  left: 10%;
+  color: rgb(0, 0, 0);
+  width: 20px;
+  height: 38px;
+  line-height: 40px;
+  padding-right:5%;
+  padding-left: 8px;
+  background-color: white;
+}
+
+.formGroup input
+{
+  border: none;
+  width: 80%;
+  height: 40px;
+  border-bottom: 2px solid rgb(73, 65, 65);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins',sans-serif;
+}
+input:focus 
+{
+  outline: none !important;
+  border-bottom: 2px solid rgb(44, 109, 19);
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+::placeholder 
+{
+  color: rgb(147, 147, 148);
+}
+.show{
+  position: absolute;
+  left: 80%;
+  bottom: 42%;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(2, 2, 2);
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.psw:valid ~ .show{
+  display: block;
+}
+.c-show{
+  position: absolute;
+  left: 80%;
+  bottom: 29%;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.cpsw:valid ~ .c-show{
+  display: block;
+}
+input[type="submit"]
+{
+  padding-bottom: 100px;
+}
+.btn2
+{
+  padding: 11px;
+  width: 170px;
+  height: 40px;
+  background-color: rgb(10, 136, 43);
+  border-style: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn2:hover
+{
+  background-color: rgba(10, 136, 43, 0.5);
+}
+.bubbles img
+{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom:-70px;
+}
+@keyframes bubble
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity:0;
+    }
+    50%
+    {
+        opacity:1;
+    }
+    70%
+    {    
+        opacity:1;
+    }
+    100%
+    {
+        transform: translateY(-80vh);
+        opacity:0;
+    }
+}
+.bubbles img:nth-child(1)
+{
+    animation-delay: 3s;
+    width: 50px;
+}
+.bubbles img:nth-child(2)
+{
+    animation-delay: 1s;
+    width: 40px;
+}
+.bubbles img:nth-child(3)
+{
+    animation-delay: 4s;
+    width: 70px;
+}
+.bubbles img:nth-child(4)
+{
+    animation-delay: 6s;
+    width:55px;
+}
+.bubbles img:nth-child(5)
+{
+    animation-delay: 4.5s;
+    width: 65px;
+}
+.bubbles img:nth-child(6)
+{
+    animation-delay: 2s;
+    width: 70px;
+}
+.bubbles img:nth-child(7)
+{
+    animation-delay: 5.5s;
+    width: 55px;
+}
+.bubbles img:nth-child(8)
+{
+    animation-delay: 1.5s;
+    width: 4px;
+}
+.bubbles img:nth-child(9)
+{
+    animation-delay: 3.5s;
+    width: 60px;
+}
+.bubbles img:nth-child(10)
+{
+    animation-delay: 4.5s;
+    width: 35px;
+}
