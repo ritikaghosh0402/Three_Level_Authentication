@@ -42,7 +42,7 @@ if(isset($e));
                         </div>
                         <div class="formgroup">
                             <input type="hidden" name="email" value="<?=$e;?>">
-                            <button type="submit" name="sub_otp" class="btn1">VARIFY</button>                     
+                            <button type="submit" name="sub_otp" class="btn1">VERIFY</button>                     
                         </div>
                     </form>
                 </div>
